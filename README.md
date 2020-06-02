@@ -1,14 +1,16 @@
 running project deployed using Heroku https://stormy-falls-71447.herokuapp.com/
 
+-MEN based web application to publish any campground with authenticated user.
+-Features: login, signup, posting Campgrounds, adding comments
+-tools and framework: Node JS, Express, MongoDB (mongo Atlas)
+
 # YelpCamp
 ##Initial Setup
 
 Add Landing Page
 Add Campgrounds Page that lists all campgrounds
-Each Campground has:
-
-Name
-Image
+Each Campground has: Name
+                     Image
 ##Layout and Basic Styling
 
 Create our header and footer partials
