@@ -1,0 +1,33 @@
+<%- include ("partials/header") %>
+<div id="ind">
+	<table style="width:80%%">
+	 <tr>
+		 <th>NAME</th>
+		 <th>AGE</th>
+		 <th>STD</th>
+		 
+	 </tr>
+	 
+
+<% assignment.forEach(function(ass){%>
+	<tr>
+		 <td><%=ass.name %></td>
+		 <td><%=ass.age %></td>
+		 <td><%=ass.std %></td>
+		 <td>
+			<a class="ui orange basic button" href="/assignment/<%= ass._id %>/edit">Edit</a>
+            <form id="delete" action="/assignment/<%= ass._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
+		</td>
+		 
+	 </tr>
+	 
+  <% }) %>
+</table>
+	
+</div>
+
+<%- include ("partials/footer") %>
+
+ 
